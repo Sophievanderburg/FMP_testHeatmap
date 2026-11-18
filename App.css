@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+body {
+  background: #f4f4f2;
+  color: #222;
+  margin: 0;
+}
+
+main {
+  padding: 2em;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.hint {
+  color: #666;
+  margin: 0 0 20px;
+}
+
+/* --- Verbind-knop en status --- */
+.connection-bar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.connection-bar button {
+  font-size: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: #fff;
+}
+.connection-bar button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.status {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* --- Sensor-rondjes --- */
+.sensors {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.sensor {
+  width: 140px;
+  text-align: center;
+}
+.dot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  transition: background-color 0.15s; /* Kleur verloopt soepel */
+}
+.name {
+  font-weight: 600;
+}
+.value {
+  color: #666;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Legenda --- */
+.legend {
+  margin-top: 32px;
+  display: flex;
+  gap: 18px;
+  font-size: 13px;
+  color: #555;
+  flex-wrap: wrap;
+}
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
