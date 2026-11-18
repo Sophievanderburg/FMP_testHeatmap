@@ -2,13 +2,12 @@
 //  Opbouw:
 //    useSerialData  -> haalt data binnen       (hooks/)
 //    ConnectionBar  -> knop + status           (components/)
-//    SensorDot      -> één rondje per sensor   (components/)
+//    Heatmap        -> rechthoek met kleuren   (components/)
 //    Legend         -> uitleg van de kleuren   (components/)
 // =====================================================================
-import { SENSORS } from "./config.js";
 import { useSerialData } from "./hooks/useSerialData.js";
 import ConnectionBar from "./components/ConnectionBar.js";
-import SensorDot from "./components/SensorDot.js";
+import Heatmap from "./components/Heatmap.js";
 import Legend from "./components/Legend.js";
 
 export default function App() {
@@ -18,7 +17,7 @@ export default function App() {
 
   return (
     <main>
-      <h1>FSR kleurtest</h1>
+      <h1>FSR heatmap</h1>
       <p className="hint">
         Open in Chrome of Edge. Sluit eerst de Serial Monitor én de Serial
         Plotter in Arduino.
@@ -26,15 +25,9 @@ export default function App() {
 
       <ConnectionBar status={status} error={error} onConnect={connect} />
 
-      <div className="sensors">
-        {/* Voor elke sensor uit config.js één rondje, met de bijbehorende waarde */}
-        {SENSORS.map((sensor) => (
-          <SensorDot
-            key={sensor.channel}
-            name={sensor.name}
-            value={values[sensor.channel]}
-          />
-        ))}
+      {/* De heatmap krijgt alle meetwaarden en regelt zelf de rest */}
+      <div className="heatmap-wrapper">
+        <Heatmap values={values} />
       </div>
 
       <Legend />
