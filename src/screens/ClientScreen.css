@@ -3,7 +3,7 @@
    ===================================================================== */
 
 .client-screen {
-  min-height: 100vh; /* Minstens de hele hoogte van het scherm */
+  min-height: 97vh; /* Minstens de hele hoogte van het scherm */
   display: flex;
   align-items: center; /* Verticaal in het midden */
   justify-content: center; /* Horizontaal in het midden */

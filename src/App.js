@@ -40,14 +40,19 @@ export default function App() {
 
   return (
     <>
-      {/* Dropdown rechtsboven, zichtbaar op beide schermen */}
-      <ScreenSwitcher options={SCREENS} value={screen} onChange={setScreen} />
+      <header>
+        <h1>NOVÉ</h1>
+        {/* Dropdown rechtsboven, zichtbaar op beide schermen */}
+        <ScreenSwitcher options={SCREENS} value={screen} onChange={setScreen} />
+      </header>
 
       {/* Het gekozen scherm */}
       {screen === "therapist" && (
         <TherapistScreen serial={serial} intensity={intensity} />
       )}
       {screen === "client" && <ClientScreen />}
+
+      <footer></footer>
     </>
   );
 }

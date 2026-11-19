@@ -22,12 +22,6 @@ export default function TherapistScreen({ serial, intensity }) {
 
   return (
     <main>
-      <h1>FSR heatmap</h1>
-      <p className="hint">
-        Open in Chrome of Edge. Sluit eerst de Serial Monitor én de Serial
-        Plotter in Arduino.
-      </p>
-
       <ConnectionBar status={status} error={error} onConnect={connect} />
 
       <div className="heatmap-wrapper">
