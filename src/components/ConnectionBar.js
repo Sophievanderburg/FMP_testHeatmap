@@ -1,8 +1,3 @@
-// =====================================================================
-//  ConnectionBar.js — DE VERBIND-KNOP + STATUS
-//  Krijgt alles wat het nodig heeft binnen als "props" (invoer van buitenaf).
-//  Het component weet zelf niets van de ESP32; het toont alleen.
-// =====================================================================
 import "./ConnectionBar.css";
 
 // Leesbare Nederlandse tekst per status.
