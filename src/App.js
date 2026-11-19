@@ -47,10 +47,10 @@ export default function App() {
       </header>
 
       {/* Het gekozen scherm */}
-      {screen === "therapist" && (
-        <TherapistScreen serial={serial} intensity={intensity} />
+      {screen === "therapist" && <TherapistScreen />}
+      {screen === "client" && (
+        <ClientScreen serial={serial} intensity={intensity} />
       )}
-      {screen === "client" && <ClientScreen />}
 
       <footer></footer>
     </>

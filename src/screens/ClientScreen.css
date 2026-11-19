@@ -1,15 +1,10 @@
 /* =====================================================================
-   ClientScreen.css — OPMAAK VAN HET CLIËNTSCHERM
+   ClientScreen.css — OPMAAK VAN HET CLIËNTSCHERM (indeling)
+   Hoe de onderdelen op dit scherm ten opzichte van elkaar staan.
    ===================================================================== */
 
-.client-screen {
-  min-height: 97vh; /* Minstens de hele hoogte van het scherm */
-  display: flex;
-  align-items: center; /* Verticaal in het midden */
-  justify-content: center; /* Horizontaal in het midden */
-  box-sizing: border-box;
-}
-
-.client-title {
-  font-size: 48px;
+/* Kolom met heatmap, legenda en grafiek */
+.heatmap-wrapper {
+  margin-top: 32px;
+  max-width: 800px; /* Zelfde breedte als HEATMAP.width in config.js */
 }
