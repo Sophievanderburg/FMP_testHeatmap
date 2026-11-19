@@ -1,0 +1,54 @@
+.notes h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.notes {
+  --note-petrol: #276f7a; /* kleur van de laatste sessie */
+  overflow-y: scroll;
+}
+
+/* De titel-knop: standaard browseropmaak weghalen */
+.note-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.note-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.note-header h2 span {
+  font-size: 16px;
+}
+
+/* Laatste sessie: petrolkleurig (titel én pijltje) */
+.note-header.is-last {
+  color: var(--note-petrol);
+}
+
+.note-chevron {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  transition: transform 0.2s; /* Pijltje draait soepel */
+}
+.note-chevron.is-open {
+  transform: rotate(180deg); /* Open = pijltje omhoog */
+}
+
+.note-content {
+  padding: 0 0 12px;
+  line-height: 1.5;
+}

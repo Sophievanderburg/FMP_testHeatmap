@@ -1,16 +1,34 @@
 {
   "noteItems": {
     "item1": {
-      "title": "Session 1",
+      "title": "Sessie 1",
+      "datum": "09-09-2026",
       "content": "This is the content of session 1."
     },
     "item2": {
-      "title": "Session 2",
+      "title": "Sessie 2",
+      "datum": "16-09-2026",
       "content": "This is the content of session 2."
     },
     "item3": {
-      "title": "Session 3",
+      "title": "Sessie 3",
+      "datum": "23-09-2026",
       "content": "This is the content of session 3."
+    },
+    "item4": {
+      "title": "Sessie 4",
+      "datum": "30-09-2026",
+      "content": "This is the content of session 4."
+    },
+    "item5": {
+      "title": "Sessie 5",
+      "datum": "07-10-2026",
+      "content": "This is the content of session 5."
+    },
+    "item6": {
+      "title": "Sessie 6",
+      "datum": "14-10-2026",
+      "content": "This is the content of session 6."
     }
   }
 }
