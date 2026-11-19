@@ -1,0 +1,27 @@
+/* =====================================================================
+   ConnectionBar.css — OPMAAK VAN DE VERBIND-KNOP + STATUS
+   ===================================================================== */
+
+.connection-bar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.connection-bar button {
+  font-size: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: #fff;
+}
+.connection-bar button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.status {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #666;
+}

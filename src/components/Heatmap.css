@@ -1,0 +1,11 @@
+/* =====================================================================
+   Heatmap.css — OPMAAK VAN DE HEATMAP (de rechthoek)
+   ===================================================================== */
+
+.heatmap {
+  display: block;
+  width: 100%; /* Past zich aan de breedte van het scherm aan */
+  height: auto; /* Hoogte schaalt mee, zodat de verhouding klopt */
+  border: 4px solid #777;
+  border-radius: 12px;
+}

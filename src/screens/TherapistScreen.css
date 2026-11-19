@@ -1,0 +1,10 @@
+/* =====================================================================
+   TherapistScreen.css — OPMAAK VAN HET THERAPEUTSCHERM (indeling)
+   Hoe de onderdelen op dit scherm ten opzichte van elkaar staan.
+   ===================================================================== */
+
+/* Kolom met heatmap, legenda en grafiek */
+.heatmap-wrapper {
+  margin-top: 32px;
+  max-width: 800px; /* Zelfde breedte als HEATMAP.width in config.js */
+}

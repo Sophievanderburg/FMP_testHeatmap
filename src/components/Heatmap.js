@@ -10,6 +10,7 @@
 //  Props:
 //   values -> meetwaarden per kanaal, bijv. { 0: 123, 1: 456, 2: 789 }
 // =====================================================================
+import "./Heatmap.css";
 import { useEffect, useRef } from "react";
 import { SENSORS, HEATMAP } from "../config.js";
 import { idwValue } from "../utils/interpolate.js";

@@ -10,6 +10,7 @@
 //   serial    -> { values, status, error, connect } uit useSerialData
 //   intensity -> { history, trend, stats } uit useMovementIntensity
 // =====================================================================
+import "./TherapistScreen.css";
 import ConnectionBar from "../components/ConnectionBar.js";
 import Heatmap from "../components/Heatmap.js";
 import Legend from "../components/Legend.js";
