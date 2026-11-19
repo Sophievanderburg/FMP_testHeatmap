@@ -1,0 +1,75 @@
+/* =====================================================================
+   ScreenSwitcher.css — OPMAAK VAN DE DROPDOWN RECHTSBOVEN
+   Kleuren en vormen zoals in het ontwerp. Pas hier de kleuren aan.
+   ===================================================================== */
+
+.switcher {
+  /* Kleuren op één plek, zodat je ze makkelijk kunt aanpassen */
+  --switcher-bg: #c7d4d6; /* lichte blauwgrijze achtergrond */
+  --switcher-text: #3e6e78; /* donker blauwgroene tekst */
+
+  position: fixed; /* Blijft altijd rechtsboven, ook bij scrollen */
+  top: 24px;
+  right: 24px;
+  z-index: 100; /* Ligt boven de rest van de pagina */
+
+  min-width: 200px;
+  background: var(--switcher-bg);
+  color: var(--switcher-text);
+  border-radius: 28px; /* Helft van de hoogte = pilvorm */
+  font-size: 24px;
+  overflow: hidden;
+}
+
+/* Knoppen in de dropdown: standaard browseropmaak weghalen */
+.switcher button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* De pil bovenaan */
+.switcher-header {
+  width: 100%;
+  height: 56px;
+  padding: 0 24px 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 28px;
+}
+
+/* Als het menu open is: een zachte lijn onder de pil, zoals in het ontwerp */
+.switcher.is-open .switcher-header {
+  box-shadow: 0 2px 0 rgba(62, 110, 120, 0.25);
+}
+
+.switcher-chevron {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* Het menu met keuzes */
+.switcher-menu {
+  list-style: none;
+  padding: 16px 0 20px;
+}
+
+.switcher-option {
+  width: 100%;
+  padding: 8px 28px;
+}
+
+.switcher-option:hover {
+  background: rgba(62, 110, 120, 0.08);
+}
+
+/* Het scherm dat nu open is: dikgedrukt */
+.switcher-option.is-selected {
+  font-weight: 600;
+}

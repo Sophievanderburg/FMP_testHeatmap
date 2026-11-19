@@ -1,0 +1,15 @@
+/* =====================================================================
+   ClientScreen.css — OPMAAK VAN HET CLIËNTSCHERM
+   ===================================================================== */
+
+.client-screen {
+  min-height: 100vh; /* Minstens de hele hoogte van het scherm */
+  display: flex;
+  align-items: center; /* Verticaal in het midden */
+  justify-content: center; /* Horizontaal in het midden */
+  box-sizing: border-box;
+}
+
+.client-title {
+  font-size: 48px;
+}
