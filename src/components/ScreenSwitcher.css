@@ -1,23 +1,18 @@
-/* =====================================================================
-   ScreenSwitcher.css — OPMAAK VAN DE DROPDOWN RECHTSBOVEN
-   Kleuren en vormen zoals in het ontwerp. Pas hier de kleuren aan.
-   ===================================================================== */
-
 .switcher {
   /* Kleuren op één plek, zodat je ze makkelijk kunt aanpassen */
   --switcher-bg: #c7d4d6; /* lichte blauwgrijze achtergrond */
   --switcher-text: #3e6e78; /* donker blauwgroene tekst */
 
-  position: fixed; /* Blijft altijd rechtsboven, ook bij scrollen */
-  top: 24px;
-  right: 24px;
-  z-index: 100; /* Ligt boven de rest van de pagina */
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 100;
 
-  min-width: 200px;
+  width: 125px;
   background: var(--switcher-bg);
   color: var(--switcher-text);
-  border-radius: 28px; /* Helft van de hoogte = pilvorm */
-  font-size: 24px;
+  border-radius: 18px;
+  font-size: 1.25em;
   overflow: hidden;
 }
 
@@ -34,12 +29,11 @@
 /* De pil bovenaan */
 .switcher-header {
   width: 100%;
-  height: 56px;
-  padding: 0 24px 0 28px;
+  aspect-ratio: 3.5 / 1;
+  padding: 0 0.75em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
   border-radius: 28px;
 }
 
@@ -49,24 +43,19 @@
 }
 
 .switcher-chevron {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
 }
 
 /* Het menu met keuzes */
 .switcher-menu {
   list-style: none;
-  padding: 16px 0 20px;
 }
 
 .switcher-option {
   width: 100%;
-  padding: 8px 28px;
-}
-
-.switcher-option:hover {
-  background: rgba(62, 110, 120, 0.08);
+  padding: 8px 16px;
 }
 
 /* Het scherm dat nu open is: dikgedrukt */
