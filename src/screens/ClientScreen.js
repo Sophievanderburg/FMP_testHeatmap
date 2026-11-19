@@ -1,6 +1,5 @@
 // =====================================================================
 //  ClientScreen.js — HET SCHERM VOOR DE CLIËNT
-//  (Dit was eerst App.js.)
 //
 //  Dit scherm haalt zelf GEEN data op; die krijgt het binnen via props
 //  vanuit App.js. Zo blijft de verbinding met de ESP32 (en de grafiek

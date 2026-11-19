@@ -1,0 +1,21 @@
+{
+  "epdItems": {
+    "name": "Kira van den Duinen",
+    "geboortedatum": "01-01-1990",
+    "diagnose": "Depressie",
+    "klachten": {
+      "0": "Somberheid",
+      "1": "Vermoeidheid",
+      "2": "Paniekaanvallen"
+    },
+    "behandelplan": {
+      "0": "Cognitieve gedragstherapie",
+      "1": "Medicatie"
+    },
+    "Doelen": [
+      "Minder slapen, meer energie",
+      "Vrolijker worden",
+      "Minder angstig"
+    ]
+  }
+}
