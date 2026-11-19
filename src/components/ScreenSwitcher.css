@@ -3,8 +3,8 @@
   --switcher-text: #3e6e78;
 
   position: fixed;
-  top: 0.25em;
-  right: 1em;
+  top: 0.5em;
+  right: 0.5em;
   z-index: 100;
 
   width: 125px;
@@ -28,7 +28,7 @@
 /* De pil bovenaan */
 .switcher-header {
   width: 100%;
-  aspect-ratio: 3.5 / 1;
+  aspect-ratio: 4.5/ 1;
   padding: 0 0.75em;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
 
 /* Als het menu open is: een zachte lijn onder de pil, zoals in het ontwerp */
 .switcher.is-open .switcher-header {
-  box-shadow: 0 2px 0 rgba(62, 110, 120, 0.25);
+  box-shadow: 0 1px 2px rgba(66, 102, 110, 0.25);
 }
 
 .switcher-chevron {
